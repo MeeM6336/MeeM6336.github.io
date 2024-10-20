@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Home</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Anthony's personal website">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script src="script.js"></script>
+        <header>
+            <nav id="desktop-nav">
+                <div>
+                    <ul class="nav-links">
+                      <li><a class="a_nav" href="index.html">Home</a></li>
+                      <li><a class="a_nav" href="#projects">Projects</a></li>
+                      <li><a class="a_nav" href="#contact">Contact</a></li>
+                      <li><a class="a_nav" href="posts.html" target=”_blank”>Posts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="profile">
+            <div class="section__text"> 
+                <h1 class="title">Anthony Nguyen</h1>
+                <p class="section__text__p">Hi I program, study, and write about things. 
+                I enjoy learning new things and exploring my passions. Check out my 
+                <a class="a_posts" href="#projects">projects</a> below
+                </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./assets/ResumeV2_AN.pdf')">
+                    Download Resume
+                    </button>
+                    <button class="btn btn-color-2" onclick="location.href='./#contact'">
+                    Contact Me
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img
+                      src="./assets/linkedin.png"
+                      alt="My LinkedIn profile"
+                      class="icon"
+                      onclick="location.href='https://www.linkedin.com/in/anthony-nguyen-574aa3191/'"
+                    />
+                    <img
+                      src="./assets/github.png"
+                      alt="My Github profile"
+                      class="icon"
+                      onclick="location.href='https://github.com/MeeM6336'"
+                    />
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <p class="section__text__p">Browse My Recent</p>
+            <h1 class="title__projects">Projects</h1>
+            <div class="project-details-container">
+              <div class="project-containers">
+                <div class="details-container">
+                  <div class="article-container">
+                    <img src="./assets/project-1.jpg" alt="Project 1" class="project-img"/>
+                  </div>
+                  <h2 class="project-sub-title project-title">Gym Tracker</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-2.png"
+                      alt="Project 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="project-sub-title project-title">Glam</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Live Demo
+                    </button>
+                  </div>
+                </div>
+                <div class="details-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/project-3.jpg"
+                      alt="Project 3"
+                      class="project-img"
+                    />
+                  </div>
+                  <h2 class="project-title">Kpop Photocard Trading App</h2>
+                  <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+                    Live Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="contact"> 
+          <p class="section__text__p">Get in Touch</p>
+          <h1 class="title__projects">Contact Me</h1>
+          <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+              <img
+                src="./assets/email.png"
+                alt="Email icon"
+                class="icon contact-icon"
+              />
+              <p><a href="mailto:anthony.nguyen6336@gmail.com">anthony.nguyen6336@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+              <img
+                src="./assets/linkedin.png"
+                alt="LinkedIn icon"
+                class="icon contact-icon"
+              />
+              <p><a href="https://www.linkedin.com/in/anthony-nguyen-574aa3191/" target=”_blank”>LinkedIn</a></p>
+            </div>
+          </div>
+        </section>
+        <footer>
+        <p>Copyright &#169; 2024 Anthony Nguyen. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
