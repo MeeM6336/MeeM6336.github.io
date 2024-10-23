@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 18, 18);
+}
+
+@font-face {
+    font-family: "VVDS Fifties Exp Reg";
+    src: url('../assets/fonts/VVDS-Fifties-Exp-Reg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "VVDS Fifties Exp Reg", sans-serif;
+    letter-spacing: 0.05em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(255, 255, 255)
+}
+
+/* Transitions */
+
+a, .tbn {
+    transition: all 300ms ease
+}
+
+/* Desktop Nav */
+#desktop-nav {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 6%
+}
+
+nav, 
+.nav-links {
+    display: flex;
+    background-color: black;
+}
+
+.nav-links li, .nav-links a{
+    background-color: black;
+}
+
+nav {
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.nav-logo {
+    height: 2rem;
+}
+
+.nav-logo img {
+    background-color: rgb(0, 0, 0);
+    height: 2rem;
+}
+
+.nav-links {
+    gap: 4rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.a_nav {
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.a_nav:hover {
+    color: rgb(214, 51, 51);
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(255, 255, 255);
+}
+
+/* Sections */
+section {
+    padding-top: 6vh;
+    height: 96vh;
+    margin: 0 10vh;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+.section-title {
+    color: white;
+    font-size: 4rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 10rem;
+}
+
+.offset-underline {
+    position: relative;
+    z-index: 1;
+}
+
+.offset-underline::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;  /* Distance below the text */
+    left: 46%;     /* Start halfway across the heading */
+    width: 12%;    /* Length of the underline (50% of the heading width) */
+    height: 16px;   /* Thickness of the underline */
+    background-color: rgb(214, 51, 51);  /* Color of the underline */
+    z-index: -1;
+}
+
+/* Profile */
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 90vh;
+}
+
+.profile-title {
+    color: white;
+    font-size: 5rem;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 12rem;
+}
+
+.profile-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.profile-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-icons img{
+    padding: 2%;
+}
+
+.cursor {
+    display: inline-block;
+    color: white;
+    font-size: 5rem;
+    animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* About */
+#about {
+    margin-top: 4rem;
+}
+
+.about-section-pic-container {
+    margin-left: 10%;
+}
+
+.about-section-pic-container img {
+    width: 90%;
+    height: auto;
+}
+
+.about-section-details-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.about-section-text {
+    padding-left: 20%;
+    padding-bottom: 2%;
+}
+
+.about-section-text p {
+    font-size: 1.75rem;
+    line-height: 2;
+}
+
+.about-section-button {
+    padding-left: 25%;
+}
+
+/* Icons */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+/* Buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    color: white;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+  
+.btn-color-1, .btn-color-2 {
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+  
+.btn-color-1, .btn-color-2:hover {
+    background: rgb(214, 51, 51);
+    color: white;
+    cursor: pointer;
+}
+  
+.btn-container {
+    gap: 1rem;
+}
+
+/* Projects Section */
+#projects {
+    position: relative;
+    margin-bottom: 12rem;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.project-grid a {
+    display: block;
+}
+
+.project-img-container {
+    position: relative; /* Positioning for the overlay */
+    overflow: hidden; /* Hide overflow of the image */
+}
+
+.project-img-container img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+
+.project-img-overlay {
+    position: absolute; /* Position overlay over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Initially hidden */
+    display: flex; /* Center text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    transition: opacity 0.3s ease; /* Smooth transition for overlay */
+}
+
+.project-text {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.project-title {
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-img-container:hover .project-img-container img {
+    opacity: 0.5;
+}
+
+.project-img-container:hover .project-img-overlay {
+    opacity: 1;
+}
+
+/* Footer Section */
+
+.footer-component {
+    background-color: rgb(31, 31, 31);
+    height: 30vh;
+    clip-path: polygon(0 0, 100% 40%, 100% 100%, 0% 100%);
+}
+  
+.footer-component p, .footer-component h1 {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    text-align: center;
+    padding-top: 12rem;
+    
+}
+
+/* Posts Section */
+
+.posts-title {
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.posts-subtitle {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-left: 27rem;
+    margin-bottom: 1.5rem;
+}
+
+.a_posts {
+    color: rgb(214, 51, 51);
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+.a_posts:hover {
+    color: rgb(240, 132, 132);
+}
+
+.posts-p {
+    margin-left: 27rem;
+    margin-right: 27rem;
+    line-height: 2rem;
+}
+
+.posts-hr {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.posts-img {
+    width: 30%;
+    padding: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;   
+}
