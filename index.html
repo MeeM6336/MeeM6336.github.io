@@ -5,21 +5,23 @@
       <meta charset="UTF-8">
       <meta name="description" content="Anthony's personal website">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <header>
             <nav id="desktop-nav">
               <div class="nav-logo">
-                <img src="/assets/icons/logo.png">
+                <a href="index.html" class="a-nav-icon">
+                  <img src="assets/icons/logo.png">
+                </a>
               </div>
               <div>
                 <ul class="nav-links">
-                  <li><a class="a_nav" href="index.html">Home</a></li>
-                  <li><a class="a_nav" href="#about">About</a></li>
-                  <li><a class="a_nav" href="#projects">Projects</a></li>
-                  <li><a class="a_nav" href="posts.html" target=”_blank”>Posts</a></li>
-                  <li><a class="a_nav" href="#contact">Contact</a></li>
+                  <li><a class="a-nav" href="index.html">Home</a></li>
+                  <li><a class="a-nav" href="#about">About</a></li>
+                  <li><a class="a-nav" href="#projects">Projects</a></li>
+                  <li><a class="a-nav" href="posts.html">Posts</a></li>
+                  <li><a class="a-nav" href="#contact">Contact</a></li>
                 </ul>
               </div>
             </nav>
@@ -34,9 +36,9 @@
                   <a class="a_posts" href="#projects">projects</a> below
                 </p>
                 <div class="profile-icons">
-                  <img src="/assets/icons/github.png" class="icon" onclick="location.href= 'https://github.com/MeeM6336'">
-                  <img src="/assets/icons/linkedin_bw.png" class="icon" onclick="location.href= 'https://www.linkedin.com/in/anthony-nguyen-574aa3191/'">
-                  <img src="/assets/icons/email_bw.png" class="icon" onclick="location.href= 'mailto:anthony.nguyen6336@gmail.com'">
+                  <img src="assets/icons/github.png" class="icon" onclick="location.href= 'https://github.com/MeeM6336'">
+                  <img src="assets/icons/linkedin_red.png" class="icon" onclick="location.href= 'https://www.linkedin.com/in/anthony-nguyen-574aa3191/'">
+                  <img src="assets/icons/email_red.png" class="icon" onclick="location.href= 'mailto:anthony.nguyen6336@gmail.com'">
                 </div>
             </div>
         </section>
@@ -44,7 +46,7 @@
           <h1 class="project-title offset-underline">About Me</h1>
           <div class="section-container">
             <div class="about-section-pic-container">
-              <img src="/assets/images/about-pic.jpg">
+              <img src="assets/images/about-pic.jpg">
             </div>
             <div class="about-section-details-container">
               <div class="about-section-text">
@@ -67,40 +69,45 @@
         <section id="projects">
           <h1 class="project-title offset-underline">Projects</h1>
             <div class="project-grid">
-              <a href="" class="project-img-container">
-                <img src="./assets/images/project-1.jpg" class="project-img">
+              <a href="#projects" class="project-img-container">
+                <img src="assets/images/project-1.jpg" class="project-img">
                 <div class="project-img-overlay">
-                  <div class="project-text">Gym Tracker</div>
+                  <p class="project-text-title">Gym Tracker</p>
+                  <p class="project-text-details">A simple app that tracks gym progress, including sets, reps, weight, and exercise type.</p>
                 </div>
               </a>
-              <a href="" class="project-img-container">
-                <img src="./assets/images/project-2.jpg" class="project-img">
+              <a href="#projects" class="project-img-container">
+                <img src="assets/images/project-2.jpg" class="project-img">
                 <div class="project-img-overlay">
-                  <div class="project-text">Closet App</div>
+                  <p class="project-text-title">Closet App</p>
+                  <p class="project-text-details">An mobile app that stores the user's closet, and gives outfit ideas.</p>
                 </div>
               </a>
-              <a href="" class="project-img-container">
-                <img src="./assets/images/project-3.jpg" class="project-img">
+              <a href="#projects" class="project-img-container">
+                <img src="assets/images/project-3.jpg" class="project-img">
                 <div class="project-img-overlay">
-                  <div class="project-text">K-Pop PC Trading Outlet</div>
+                  <p class="project-text-title">K-Pop PC Trading Outlet</p>
+                  <p class="project-text-details">A website where users can collect, trade, sell, and buy K-Pop collectibles such as photocards and albums.</p>
                 </div>
               </a>
-              <a href="" class="project-img-container">
-                <img src="./assets/images/project-4.jpg" class="project-img">
+              <a href="projects/weather-app/index.html" target="_blank" class="project-img-container">
+                <img src="assets/images/project-4.jpg" class="project-img">
                 <div class="project-img-overlay">
-                  <div class="project-text">Weather App</div>
+                  <p class="project-text-title">Weather App</p>
+                  <p class="project-text-details">A basic weather application which displays the current, and future  weather conditions.</p>
                 </div>
               </a>
-              <a href="" class="project-img-container">
-                <img src="./assets/images/project-5.jpg" class="project-img">
+              <a href="#projects" class="project-img-container">
+                <img src="assets/images/project-5.jpg" class="project-img">
                 <div class="project-img-overlay">
-                  <div class="project-text">Amazon Price History</div>
+                  <p class="project-text-title">Amazon Price History</p>
+                  <p class="project-text-details">Displays the price trends for a given Amazon product.</p>
                 </div>
               </a>
-              <a href="" class="project-img-container">
-                <img src="./assets/images/project-6.jpg" class="project-img">
+              <a href="#projects" class="project-img-container">
+                <img src="assets/images/project-6.jpg" class="project-img">
                 <div class="project-img-overlay">
-                  <div class="project-text">More to come...</div>
+                  <p class="project-text-title">More to come...</p>
                 </div>
               </a>
             </div>
@@ -108,6 +115,6 @@
         <div class="footer-component">
           <p>Copyright &#169; 2024 Anthony Nguyen. All Rights Reserved.</p>
         </div>
-        <script src="/js/script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
